@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const cors = require('cors'); // dodaj import modułu cors
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors()); // użyj cors middleware
 
